@@ -8,10 +8,10 @@ const shuffleButton = document.getElementById("shuffle");
 const allSongs = [
   {
     id: 0,
-    title: "Scratching The Surface",
-    artist: "Quincy Larson",
-    duration: "4:25",
-    src: "https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3",
+    title: "Born To Shine",
+    artist: "Dre Sensei",
+    duration: "3:11",
+    src: "https://j3dim4st3r.github.io/Music-Player/tracks/BORN%20TO%20SHINE.mp3",
   },
   {
     id: 1,
@@ -89,6 +89,8 @@ const playSong = (id) => {
   const song = userData?.songs.find((song) => song.id === id);
   audio.src = song.src;
   audio.title = song.title;
+  console.log("Attempting to play:", id);
+  console.log("Found song:", song);
 
   if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
     audio.currentTime = 0;
