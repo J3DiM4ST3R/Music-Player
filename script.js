@@ -13,7 +13,7 @@ const allSongs = [
     duration: "3:11",
     src: "https://j3dim4st3r.github.io/Music-Player/tracks/BORN%20TO%20SHINE.mp3",
   },
-  {
+  /*{
     id: 1,
     title: "Can't Stay Down",
     artist: "Quincy Larson",
@@ -75,7 +75,7 @@ const allSongs = [
     artist: "Quincy Larson",
     duration: "2:43",
     src: "https://cdn.freecodecamp.org/curriculum/js-music-player/chasing-that-feeling.mp3",
-  },
+  },*/
 ];
 
 const audio = new Audio();
